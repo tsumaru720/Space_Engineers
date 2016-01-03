@@ -28,7 +28,6 @@ namespace Skeleton
         // Call with either a keyword as an argument (red, blue, yellow)
         // Call with an RGB value (without spaces) such as 255,255,255
 
-        //Set default value of Light Color to White
         Color LIGHT_COLOR = new Color(); 
 
         void Main(string argument)
@@ -56,17 +55,16 @@ namespace Skeleton
                 }
                 else
                 {
-                    // Only one element, suggests a word.
-                    // Given We've got this far, suggests its an unknown colour alias
+                    // Only one element, suggests an alias has been provided.
+                    // Given We've got this far, looks like its an unknown colour alias
 
                     // Change lights to default (White) if there is a problem
                     LIGHT_COLOR = new Color(255, 255, 255);
-                    Echo("Unknown colour alias provided - " + LIGHT_COLOR.ToString());
+                    Echo("Unknown colour alias provided");
                 }
             }
 
             // We should now have a colour, lets set it!
-            
             ColorLights(LIGHT_COLOR);
         }
 
