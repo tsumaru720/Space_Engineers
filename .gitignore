@@ -51,7 +51,10 @@ Temporary Items
 ###
 
 *.suo
-*/obj
-*/bin
-/packages
+*\obj
+*\bin
+\packages
+\properties
 *.user
+*.sln
+*.csproj
