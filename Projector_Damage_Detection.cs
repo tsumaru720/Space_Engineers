@@ -16,12 +16,6 @@ namespace Skeleton
         // Aim of this script is to detect if your ship is missing blocks using a projector
         // In combat, this usually means the block has been destroyed.
 
-        struct buildProgress
-        {
-            public int currentBlocks;
-            public int totalBlocks;
-        }
-
         void Main(string argument)
         {
 
